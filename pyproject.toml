@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "django-docker"
+version = "0.1.0"
+description = ""
+authors = ["Ismael"]
+readme = "README.md"
+packages = [{include = "django_docker"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
