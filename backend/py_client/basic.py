@@ -1,8 +1,8 @@
 import requests
 
-# endpoint = "https://httpbin.org/status/200"
-endpoint = "https://localhost:8000/api/products/products/"
+endpoint = "http://localhost:8000/api/products/update/1/"
 
-response = requests.post(endpoint, json={"title": "kalsdhfjk"})
+data = {"title": "mandioca", "price": 128, "content": "macachera"}
 
-print(response.text)
+response = requests.put(endpoint, json=data)
+print(response)
